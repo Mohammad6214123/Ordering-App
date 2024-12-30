@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .logo-png{
+            width: 100px;
+            height: 50px;
+            display: flex;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background-color: none;
+            color: #181616;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .home{
+            background-color: #3bce5b;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 1000px;
+            
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ff5722;
+            padding: 20px;
+            color: #fff;
+            margin-top: 300px;
+        }
+        @media (max-width: 320px) {
+    header {
+        padding: 15px; 
+    }
+    header h1 {
+        font-size: 24px; 
+    }
+    .content {
+        padding: 10px; 
+        max-width: 100%; 
+    }
+    .content h2 {
+        font-size: 20px; 
+    }
+    .content p {
+        font-size: 14px; 
+        margin-bottom: 15px; 
+    }
+    .contact-info {
+        padding: 8px; 
+    }
+    .contact-info a {
+        font-size: 14px; 
+    }
+    footer {
+        padding: 15px; 
+        font-size: 12px; 
+        margin-top: 100px; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+            <img src="./logo/Logo.png" class="logo-png"> 
+            <h1>About Us</h1>
+            <a href="index.html" title="This button will take you to homepage">
+             <button class="home">Goto-Home</button>
+             </a>   
+    </header>
+    <div class="content">
+        <h2>Our Story</h2>
+        <p>We are a passionate team dedicated to providing the best food and service to our customers. Our goal is to offer a warm and welcoming experience, whether you're here for a casual meal or a special celebration.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to serve fresh, high-quality dishes made from the best ingredients. We believe in bringing people together through great food and exceptional service.</p>
+    </div>
+
+    <div class="contact-info">
+        <p>If you have any questions or would like to learn more, feel free to <a href="mailto:contact@restaurant.com">contact us</a>.</p>
+    </div>
+    
+ 
+    <footer>
+        2024 Delicious Foods
+    </footer>
+
+</body>
+</html>

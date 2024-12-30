@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestell-App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/img.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="javascript/templates.js"></script>
+  
+  
+</head>
+<body onload=" renderMenu()">
+  <header>
+    <div class="header-logo">
+      <img src="./logo/Logo.png" class="logo-png">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="about.html" title="About">About</a></li>
+        <li><a href="contact.html" title="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="./img/restaurant.jpg" alt="Restaurant Food" class="hero-image">
+    <div class="hero-logo">
+      <img src="./logo/logo.jpg" alt="Restaurant Logo" class="restaurantlogo">
+    </div>
+  </div>
+
+  <section class="restaurant-info">
+    <h1>Pizza world</h1>
+    <p> 4.5 (120 Reviews)</p>
+    <p>Delivery Fee: €5.00 | Free from €30.00</p>
+  </section>
+
+  <div class="menu category">
+   
+  </div>
+
+  <div class="main-dish">
+    <img src="./logo/arrow.png" alt="" class="arrow">
+    <p>All-Dishes:</p>
+  </div>
+
+  <img src="./img/secondimg.jpg" alt="" class="second-img">
+  <h2>Main-Menu:</h2>
+  <main>
+    <section class="menu-section">
+      <div id="menu-slider" class="menu-slider"></div>
+      <div id="menu-items" class="menu-items">
+        <div class="menu-category">
+          <h3>Small Dishes</h3>
+          <div class="menu-item">
+            <p>Bruschetta - €5.50</p>
+            <button class="add-to-cart" data-id="1">+</button>
+          </div>
+          <div class="menu-item">
+            <p>Garlic Bread - €4.00</p>
+            <button class="add-to-cart" data-id="2">+</button>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Main Dishes</h3>
+          <div class="menu-item">
+            <p>Margherita Pizza - €9.00</p>
+            <button class="add-to-cart" data-id="3">+</button>
+          </div>
+          <div class="menu-item">
+            <p>Pepperoni Pizza - €10.00</p>
+            <button class="add-to-cart" data-id="4">+</button>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Desserts</h3>
+          <div class="menu-item">
+            <p>Tiramisu - €6.00</p>
+            <button class="add-to-cart" data-id="5">+</button>
+          </div>
+          <div class="menu-item">
+            <p>Panna Cotta - €5.50</p>
+            <button class="add-to-cart" data-id="6">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside id="cart" class="cart">
+      <button id="close-cart" class="close-cart-button">X</button>
+      <h2>Shopping Cart</h2><hr>
+      <div id="cart-items" class="cart-items">
+        <p>Your cart is empty</p>
+      </div>
+      <div class="cart-summary">
+        <p>Subtotal: <span id="subtotal">€0.00</span></p>
+        <p>Delivery Fee: <span id="delivery-fee">€0.00</span></p>
+        <p>Total: <span id="total">€0.00</span></p><hr>
+        <button id="checkout-btn" class="checkout-btn">Place Order</button>
+      </div>
+    </aside>
+  </main>
+  
+  <section><br>
+    <button class="opencart" onclick="openCart()">Open-shopping-Cart</button>
+ <div id="cart-container" style="display:none;">
+  <button id="close-cart" onclick="closeCart()" class="closcart">X</button>
+  <div id="cart-items"></div>
+  </div>
+
+    </section>
+  <img src="img/restaurant.jpg" alt="restaurant" class="restaurant-img">
+  <footer class="footer">
+    <img src="./logo/Logo.png" class="logo-png">
+  </footer>
+  <div id="cart-toggle" class="cart-toggle">
+     <span id="cart-total">€0.00</span>
+  </div>
+
+    
+</body>
+<script src="script.js"></script>
+<script src="javascript/db.js"></script>
+</html>
+
+
+
+
